@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+*.jpg
+*.jpeg
+*.png
+!*example*.jpg
+.DS_Store
