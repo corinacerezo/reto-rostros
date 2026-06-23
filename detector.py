@@ -15,7 +15,7 @@ def detectar_rostros(ruta_imagen):
         raise FileNotFoundError(f"No se pudo abrir la imagen: {ruta_imagen}")
 
     alto, ancho = imagen.shape[:2]
-    detector = cv2.FaceDetectorYN.create(MODELO, "", (ancho, alto), score_threshold=0.5)
+    detector = cv2.FaceDetectorYN.create(MODELO, "", (ancho, alto), score_threshold=0.7)
     _, rostros = detector.detect(imagen)
 
     if rostros is None:
